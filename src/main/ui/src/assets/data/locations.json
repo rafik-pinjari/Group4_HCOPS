@@ -1,0 +1,10 @@
+
+{
+    "locations":
+        [{"country": "India",
+        "states": [
+           { "state": "Maharashtra", "cities": ["Pune", "Mumbai", "Nasik"]},
+           { "state": "Karnataka", "cities": ["Bangalore", "Mangalore", "Belgum"]}       
+       ]} 
+       ]
+    }

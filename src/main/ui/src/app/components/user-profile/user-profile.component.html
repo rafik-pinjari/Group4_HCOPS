@@ -1,0 +1,36 @@
+<div class="container panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        
+        <div class="row" style="text-align:center; padding-bottom:3%"  >
+          <img src="/assets/{{incidents.profilePic}}" width:200px height:200px>
+          
+        </div>
+        <div class="row" style="text-align:center">
+          <!-- <button class="btn btn-default" id="fileupload-example-5" (click)="upload()">
+            <input type="file" id="file" (change)="selectFile($event)">
+            <span>Upload Picture</span>
+        </button> -->
+          <label class="btn btn-default">
+            <input type="file" (change)="selectFile($event)" >
+          </label>
+          <button class="btn btn-success"  (click)="upload()">Upload</button><br/>
+         
+
+        </div>
+        <div class="row" style="padding-left:32%">
+          <h2>Ruby Kurian</h2>
+          <h2 class="font">Designation: <span contenteditable="true" class="sub-font"> Associate</span> </h2>
+          <h2 class="font">Location:<span contenteditable="true" class="sub-font"> Set Your Location</span> </h2>
+          <h2 class="font">Email: <span contenteditable="true" class="sub-font"> Empty</span> </h2>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      </div>
+
+    </div>
+  </div>
+</div>

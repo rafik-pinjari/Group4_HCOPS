@@ -1,0 +1,47 @@
+<div class="ad-margin">
+  <div class="inner">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <button aria-label="Form menu" class="btn btn-link glyphicon glyphicon-menu-hamburger"></button> New Incident
+        <button title="Add attachment" class="btn btn-link pull-right fa fa-paperclip fa-2x"></button>
+      </div>
+      <div class="panel-body">
+        <h4 style="border-bottom:1px solid grey">Incident</h4>
+        <form #formDir="ngForm">
+          <div class="form-group">
+
+            <label> Requestor</label> <input type="text" [(ngModel)]='requestor' name="requestor" class="form-control">
+          </div>
+          <div class="form-group">
+            <label><span class="mandatory-symbol">* </span>Location</label>
+            <select class="form-control" [(ngModel)]='location' name="location" id="exampleFormControlSelect1">
+                <option *ngFor="let loc of locationname">{{loc}}</option>             
+               </select>
+          </div>
+          <div class="form-group">
+            <label><span class="mandatory-symbol">* </span>Category</label>
+            <select class="form-control" name="countries" [(ngModel)]="cat" (change)="setOptions()">
+              <option selected>---Select Category---</option>
+          <option *ngFor="let c of categories">{{c.name}}</option>
+        </select>
+          </div>
+          <div class="form-group">
+            <label><span class="mandatory-symbol">* </span>Sub Category</label>
+            <select id="" class="form-control" name="states" [(ngModel)]="sc">
+              <option selected>---Select Sub-Category---</option>
+              <option *ngFor="let c of sub">{{c}}</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><span class="mandatory-symbol">* </span>Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button value="" class="btn btn-primary" (click)="getdetails()">Save</button>          
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

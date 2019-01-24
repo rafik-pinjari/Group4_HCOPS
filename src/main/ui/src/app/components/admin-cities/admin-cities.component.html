@@ -1,0 +1,89 @@
+<div class="ad-margin">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-md-3">
+              <h3><a href="#">Cities</a></h3>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>Add New Cities</button>
+            <!-- <h3><a [routerLink]="['/admin-header/admin-addnewcities']"><i class="fa fa-plus"></i>Add New Cities</a></h3> -->
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <kendo-grid k-data-source="locations" [height]="410" [pageSize]="10" [pageable]="true" [groupable]="true" [sortable]="true"
+        [filterable]="true">
+        <kendo-grid-column field="locations.country" title="Country"  [width]="100"></kendo-grid-column>
+        <kendo-grid-column field="State" title="State" [width]="120"></kendo-grid-column>
+        <kendo-grid-column field="City" title="City" [width]="120"></kendo-grid-column>
+        <kendo-grid-column [width]="120">
+          <ng-template kendoGridCellTemplate>
+            <button kendoGridAddCommand class='k-button'><span class="k-icon k-i-pencil"></span></button>
+            <button kendoGridAddCommand class='k-button'><span class="k-icon k-i-delete"></span></button>
+          </ng-template>
+        </kendo-grid-column>
+
+      </kendo-grid>
+      <!-- end of table -->
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Add New Cities</h4>
+            </div>
+            <div class="modal-body">
+              <div class="ad-margin">
+                <form>
+                  <div class="row">
+                    <div class="panel-body">
+                      <div class=" row form-group">
+                        <label for="Country" class="col-sm-3 control-label"><span class="req">* </span> Country :</label>
+                        <div class="col-sm-9">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="country" />
+                           </div>
+                      </div>
+                      </div>
+                      <div class="row form-group">
+                        <label for="state" class="col-sm-3 control-label"><span class="req">* </span> State :</label>
+                        <div class="col-sm-9">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="state" />
+                           </div>
+                      </div>
+                      </div>
+                      <div class="row form-group">
+                        <label for="city" class="col-sm-3 control-label"><span class="req">* </span> City :</label>
+                        <div class="col-sm-9">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="city" />
+                           </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"> Save </i></button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- panel body -->
+    </div>
+  </div>
+</div>
+</div>
+</div>

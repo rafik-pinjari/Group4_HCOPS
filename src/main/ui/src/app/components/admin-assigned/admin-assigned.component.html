@@ -1,0 +1,26 @@
+<!-- body -->
+<div class="ad-margin">
+    <div class="row">
+      <div class="col">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3>Assigned Incidents</h3>
+          </div>
+          <div class="panel-body">
+              <kendo-grid [kendoGridBinding]="assignedData" [height]="410" [pageSize]="10" [pageable]="true" [groupable]="true" >
+                  <kendo-grid-column field="INC" title="Incident Number" [width]="100">
+                    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+                      <a [routerLink]="['/admin-header/admin-resolver']" >{{dataItem .INC}}</a>
+                      </ng-template> 
+                  </kendo-grid-column>
+                  <kendo-grid-column field="Requestor" title="Requestor" [width]="120"></kendo-grid-column>
+                  <kendo-grid-column field="Issue" title="Issue" [width]="100"></kendo-grid-column>
+                  <kendo-grid-column field="Description" title="Description" [width]="140"></kendo-grid-column>
+                  <kendo-grid-column field="Created" title="Created" [width]="130"></kendo-grid-column>
+                  <kendo-grid-column field="AssignedTo" title="Assigned To" [width]="130"></kendo-grid-column>
+              </kendo-grid>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

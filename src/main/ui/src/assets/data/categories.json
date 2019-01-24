@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "name": "On-Boarding",
+            "Subcategories": [
+                "Induction",
+                "PF trasfer form previous organization",
+                "Queries regarding Howden",
+                "Queries regarding ID card",
+                "Queries regarding access card"
+            ]
+        },
+        {
+            "name": "Exit Off-Boarding",
+            "Subcategories": [
+                "FnF related queries",
+                "FnF documents",
+                "Retention Bonus Recovery",
+                "Checklist for exit",
+                "Exit Process Explanation"
+            ]
+        }
+    ]
+}
