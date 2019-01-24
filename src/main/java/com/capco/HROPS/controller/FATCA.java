@@ -1,4 +1,4 @@
-package PageObjectModel;
+﻿package PageObjectModel;
 
 import java.io.IOException;
 
@@ -9,8 +9,8 @@ import Utilities.ActionMethods;
 
 public class FATCA extends CitizenID_UL{
 	
-	public static String fatcaTitle = "//XCUIElementTypeStaticText[@name=\"ข้อมูลผู้เอาประกันภัย/TAX/FATCA\"]"; //Xpath
-	public static String fatcaSubTitle = "//XCUIElementTypeStaticText[@name=\"การยินยอมเปิดเผยข้อมูลเกี่ยวกับเบี้ยประกันภัยต่อกรมสรรพากร\"]"; //Xpath
+	public static String fatcaTitle = "//XCUIElementTypeStaticText[@name=\"ข้อมูลผู้เอาประกันภัย/TAX/FATCA\"]"; 
+	public static String fatcaSubTitle = "//XCUIElementTypeStaticText[@name=\"การยินยอมเปิดเผยข้อมูลเกี่ยวกับเบี้ยประกันภัยต่อกรมสรรพากร\"]"
 	public static String fatcaCitizenQuestion = "//XCUIElementTypeStaticText[@name=\"ผู้ขอเอาประกันภัยประสงค์จะใช้สิทธิขอยกเว้นภาษีเงินได้ตามกฎหมายว่าด้วยภาษีอากรหรือไม่ และยินยอมให้บริษัทประกันชีวิตส่งและเปิดเผยข้อมูลเกี่ยวกับเบี้ยประกันภัยต่อสรรพากรตามหลักเกณฑ์วิธีการที่กรมสรรพากรกำหนด\"]"; //Xpath
 	public static String fatcaCitizenAnswer1 = "//XCUIElementTypeStaticText[@name=\"มีความประสงค์ และยินยอมให้บริษัทประกันชีวิตส่งและเปิดเผยข้อมูลเกี่ยวกับเบี้ยประกันภัยต่อกรมสรรพากร ตามหลักเกณฑ์ วิธีการที่กรมสรรพากรกำหนด\"]"; //Xpath
 	public static String fatcaCitizenAnswer2 = "//XCUIElementTypeStaticText[@name=\"ไม่มีความประสงค์\"]"; //Xpath
