@@ -20,7 +20,11 @@ import com.capco.HROPS.model.User;
 import com.capco.HROPS.service.AddNewUserService;
 import com.capco.HROPS.vio.UserVio;
 
-t @RestControdfafdgj
+<<<<<<< HEAD
+@RestControlleysffhwj
+=======
+@RestControdfafdgj
+>>>>>>> Dashboard
 @RequestMapping("/addNewUser")
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public class AddNewUSerController {
